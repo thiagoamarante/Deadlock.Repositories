@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Deadlock.Repositories
 {
-    public class Class1
+    public interface IConfiguration
     {
     }
 }
