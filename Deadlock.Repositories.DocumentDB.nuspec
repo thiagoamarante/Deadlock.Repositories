@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Deadlock.Repositories.DocumentDB</id>
+    <version>1.0.0</version>
+    <title>Deadlock Repositories DocumentDB</title>
+    <authors>Thiago Amarante</authors>
+    <owners>thiagoamarante</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/thiagoamarante/Deadlock.Repositories</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Framework in C # for the abstract creation of repositories. Implementation for DocumentDB.</description>
+    <summary>
+      The objective of the framework was to create helpers in which always recur in every project when using the pattern repository.
+      Implementation for DocumentDB.
+    </summary>
+    <tags>repository abstraction, helpers, deadlock, documentdb</tags>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=386613</iconUrl>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="Deadlock.Repositories" version="1.0.0" />
+      <dependency id="Microsoft.Azure.DocumentDB" version="1.7.0" />
+      <dependency id="Newtonsoft.Json" version="8.0.3" />
+    </dependencies>
+    <frameworkAssemblies>          
+    </frameworkAssemblies>    
+  </metadata>
+  <files>
+    <file src="Deadlock.Repositories.DocumentDB\bin\Release\Deadlock.Repositories.DocumentDB.dll" target="lib\net461" />
+    <file src="Deadlock.Repositories.DocumentDB\bin\Release\Deadlock.Repositories.DocumentDB.pdb" target="lib\net461" />
+  </files>
+</package>

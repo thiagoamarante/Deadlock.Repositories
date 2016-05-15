@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deadlock.Repositories", "De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deadlock.Repositories.DocumentDB", "Deadlock.Repositories.DocumentDB\Deadlock.Repositories.DocumentDB.csproj", "{D87DC408-C4E7-4B69-AA43-6FD14A3B8B52}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D405C103-1176-4725-9635-77A8EB955F5B}"
+	ProjectSection(SolutionItems) = preProject
+		Annotations.txt = Annotations.txt
+		Deadlock.Repositories.DocumentDB.nuspec = Deadlock.Repositories.DocumentDB.nuspec
+		Deadlock.Repositories.nuspec = Deadlock.Repositories.nuspec
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deadlock.Repositories.Sample", "Deadlock.Repositories.Sample\Deadlock.Repositories.Sample.csproj", "{D372C6A5-56EC-4E21-9773-493F06197CE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +31,10 @@ Global
 		{D87DC408-C4E7-4B69-AA43-6FD14A3B8B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D87DC408-C4E7-4B69-AA43-6FD14A3B8B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D87DC408-C4E7-4B69-AA43-6FD14A3B8B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D372C6A5-56EC-4E21-9773-493F06197CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D372C6A5-56EC-4E21-9773-493F06197CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D372C6A5-56EC-4E21-9773-493F06197CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D372C6A5-56EC-4E21-9773-493F06197CE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

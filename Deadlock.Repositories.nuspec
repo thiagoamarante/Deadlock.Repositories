@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Deadlock.Repositories</id>
+    <version>1.0.0</version>
+    <title>Deadlock Repositories</title>
+    <authors>Thiago Amarante</authors>
+    <owners>thiagoamarante</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/thiagoamarante/Deadlock.Repositories</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Framework in C # for the abstract creation of repositories.</description>
+    <summary>
+      The objective of the framework was to create helpers in which always recur in every project when using the pattern repository.
+    </summary>
+    <tags>repository abstraction, helpers, deadlock</tags>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=386613</iconUrl>
+    <language>en-US</language>
+    <dependencies>      
+    </dependencies>
+    <frameworkAssemblies>          
+    </frameworkAssemblies>    
+  </metadata>
+  <files>
+    <file src="Deadlock.Repositories\bin\Release\Deadlock.Repositories.dll" target="lib\net461" />
+    <file src="Deadlock.Repositories\bin\Release\Deadlock.Repositories.pdb" target="lib\net461" />
+  </files>
+</package>
