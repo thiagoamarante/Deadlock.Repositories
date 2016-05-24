@@ -23,5 +23,10 @@ namespace Deadlock.Repositories.DocumentDB
         {
             return await base.Get<T>(id);
         }
+
+        public virtual async Task<IEnumerable<T>> List(System.Linq.Expressions.Expression<Func<T, bool>> where = null)
+        {
+            return await base.List<T>(where);
+        }
     }
 }

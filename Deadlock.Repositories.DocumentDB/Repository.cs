@@ -1,5 +1,6 @@
 ﻿using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
+using Microsoft.Azure.Documents.Linq;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -43,6 +44,21 @@ namespace Deadlock.Repositories.DocumentDB
 
                 }
             }
+            return result;
+        }
+
+        protected async Task<FeedResponse<T>> List<T>(System.Linq.Expressions.Expression<Func<T, bool>> where = null)
+        {
+            var query = this.DocumentDBContext.Client.CreateDocumentQuery<T>(
+                UriFactory.CreateDocumentCollectionUri(this.DocumentDBContext.Configuration.DataBaseName, this.DocumentDBContext.Configuration.CollectionDefault))
+                .Where(o => ((TypeQuery)o).Type == typeof(T).Name.ToLower());
+
+            if (where != null)
+                query = query.Where(where);
+
+            var result = await query
+                .AsDocumentQuery()            
+                .ExecuteNextAsync<T>();
             return result;
         }
 

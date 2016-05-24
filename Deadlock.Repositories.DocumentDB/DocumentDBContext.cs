@@ -18,7 +18,8 @@ namespace Deadlock.Repositories.DocumentDB
             this.SerializerSettings = new DocumentDBJsonSerializerSettings()
             {
                 ContractResolver = new CustomNamesContractResolver(),
-                TypeNameHandling = TypeNameHandling.Auto                
+                TypeNameHandling = TypeNameHandling.Auto,
+                NullValueHandling = NullValueHandling.Ignore                
             };
         }
 

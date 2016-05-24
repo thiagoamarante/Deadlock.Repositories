@@ -1,5 +1,5 @@
 # Deadlock.Repositories (1.0.0)
-# Deadlock.Repositories.DocumentDB (1.0.0)
+# Deadlock.Repositories.DocumentDB (1.0.1)
 
 
 Framework in C # for the abstract creation of repositories.

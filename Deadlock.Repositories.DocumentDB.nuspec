@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Deadlock.Repositories.DocumentDB</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Deadlock Repositories DocumentDB</title>
     <authors>Thiago Amarante</authors>
     <owners>thiagoamarante</owners>
