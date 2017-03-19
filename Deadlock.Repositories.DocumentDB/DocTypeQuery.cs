@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Deadlock.Repositories.DocumentDB
 {
-    public interface TypeQuery
+    public interface DocTypeQuery
     {
-        [JsonProperty("Type")]
-        string Type { get; set; }
+        [JsonProperty("DocType")]
+        string DocType { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Deadlock.Repositories.DocumentDB
 {
     public class DocumentDBJsonSerializerSettings : JsonSerializerSettings
     {
-        public string PropertyType { get; set; } = "Type";
+        public string PropertyType { get; set; } = "DocType";
 
         public bool CreatePropertyType { get; set; } = true;
     }

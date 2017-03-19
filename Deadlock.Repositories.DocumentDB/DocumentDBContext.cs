@@ -36,8 +36,13 @@ namespace Deadlock.Repositories.DocumentDB
         {
             JObject obj = JObject.FromObject(value, Newtonsoft.Json.JsonSerializer.Create(this.SerializerSettings));
             if(this.SerializerSettings.CreatePropertyType)
-                obj.Add(this.SerializerSettings.PropertyType, value.GetType().Name.ToLower());
+                obj.Add(this.SerializerSettings.PropertyType, this.TypeName(value.GetType()));
             return obj;
+        }
+
+        public string TypeName(Type type)
+        {
+            return (string.IsNullOrEmpty(this.Configuration.PrefixDocType) ? "" : this.Configuration.PrefixDocType.ToLower()) + type.Name.ToLower();
         }
 
         public override void Commit()

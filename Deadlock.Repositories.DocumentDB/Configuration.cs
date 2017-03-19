@@ -9,5 +9,7 @@
         public string CollectionDefault { get; set; }
 
         public string AuthorizationKey { get; set; }
+
+        public string PrefixDocType { get; set; }
     }
 }

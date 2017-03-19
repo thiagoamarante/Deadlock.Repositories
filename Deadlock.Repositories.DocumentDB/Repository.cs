@@ -51,7 +51,7 @@ namespace Deadlock.Repositories.DocumentDB
         {
             var query = this.DocumentDBContext.Client.CreateDocumentQuery<T>(
                 UriFactory.CreateDocumentCollectionUri(this.DocumentDBContext.Configuration.DataBaseName, this.DocumentDBContext.Configuration.CollectionDefault))
-                .Where(o => ((TypeQuery)o).Type == typeof(T).Name.ToLower());
+                .Where(o => ((DocTypeQuery)o).DocType == this.DocumentDBContext.TypeName(typeof(T)));
 
             if (where != null)
                 query = query.Where(where);
